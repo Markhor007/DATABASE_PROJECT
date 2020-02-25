@@ -63,15 +63,16 @@
                         android:textSize="15sp" />
 
                     <EditText
+                        android:id="@+id/username_tf"
                         android:layout_width="match_parent"
+                        android:inputType="textEmailAddress"
                         android:layout_height="40dp"
                         android:layout_marginTop="5dp"
                         android:background="@drawable/et_bg"
                         android:fontFamily="sans-serif-light"
                         android:paddingLeft="15dp"
                         android:paddingRight="15dp"
-                        android:id="@+id/username_tf"
-                        android:textColor="@android:color/black"
+                        android:textColor="@android:color/white"
                         android:textSize="15sp" />
 
                 </LinearLayout>
@@ -92,15 +93,16 @@
                         android:textSize="15sp" />
 
                     <EditText
+                        android:id="@+id/password_tf"
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
                         android:layout_marginTop="5dp"
+                        android:inputType="textPassword"
                         android:background="@drawable/et_bg"
                         android:fontFamily="sans-serif-light"
                         android:paddingLeft="15dp"
                         android:paddingRight="15dp"
-                        android:id="@+id/password_tf"
-                        android:textColor="@android:color/black"
+                        android:textColor="@android:color/white"
                         android:textSize="15sp" />
 
                 </LinearLayout>
@@ -112,6 +114,7 @@
                 android:layout_height="40dp"
                 android:layout_below="@+id/linlay1"
                 android:layout_centerHorizontal="true"
+                android:clickable="true"
                 android:layout_marginTop="50dp"
                 android:background="@drawable/btn_bg"
                 android:fontFamily="sans-serif-medium"
