@@ -21,7 +21,7 @@
             android:layout_height="80dp"
             android:adjustViewBounds="true"
             android:scaleType="fitCenter"
-            android:src="@drawable/ic_twitter" />
+            android:src="@drawable/icons8_sales_performance_100px_1" />
 
         <RelativeLayout
             android:id="@+id/rellay1"
@@ -37,7 +37,7 @@
                 android:layout_marginTop="20dp"
                 android:fontFamily="sans-serif-medium"
                 android:text="Login"
-                android:textColor="@color/white"
+                android:textColor="@android:color/black"
                 android:textSize="30sp" />
 
             <LinearLayout
@@ -59,7 +59,7 @@
                         android:fontFamily="sans-serif-light"
                         android:text="Username"
                         android:textAllCaps="true"
-                        android:textColor="@color/white"
+                        android:textColor="@android:color/black"
                         android:textSize="15sp" />
 
                     <EditText
@@ -70,7 +70,8 @@
                         android:fontFamily="sans-serif-light"
                         android:paddingLeft="15dp"
                         android:paddingRight="15dp"
-                        android:textColor="@color/white"
+                        android:id="@+id/username_tf"
+                        android:textColor="@android:color/black"
                         android:textSize="15sp" />
 
                 </LinearLayout>
@@ -87,7 +88,7 @@
                         android:fontFamily="sans-serif-light"
                         android:text="Password"
                         android:textAllCaps="true"
-                        android:textColor="@color/white"
+                        android:textColor="@android:color/black"
                         android:textSize="15sp" />
 
                     <EditText
@@ -98,7 +99,8 @@
                         android:fontFamily="sans-serif-light"
                         android:paddingLeft="15dp"
                         android:paddingRight="15dp"
-                        android:textColor="@color/white"
+                        android:id="@+id/password_tf"
+                        android:textColor="@android:color/black"
                         android:textSize="15sp" />
 
                 </LinearLayout>
@@ -116,12 +118,31 @@
                 android:paddingLeft="70dp"
                 android:paddingRight="70dp"
                 android:text="Login Now"
+                android:id="@+id/login_button"
+                android:onClick="loginButton"
                 android:textAllCaps="false"
-                android:textColor="@color/white"
+                android:textColor="@android:color/white"
                 android:textSize="16sp" />
 
         </RelativeLayout>
 
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:id="@+id/bottom_rally2"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:id="@+id/message_text_view"/>
     </RelativeLayout>
 
     <RelativeLayout
@@ -133,25 +154,18 @@
         android:layout_marginRight="20dp"
         android:visibility="gone">
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@color/transparent"
-            android:fontFamily="sans-serif"
-            android:text="Signup Now"
-            android:textAllCaps="true"
-            android:textColor="@color/white" />
 
-        <Button
-            android:layout_width="wrap_content"
+
+        <androidx.core.widget.ContentLoadingProgressBar
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
-            android:background="@color/transparent"
-            android:fontFamily="sans-serif"
-            android:text="Forgot Password?"
-            android:textAllCaps="true"
-            android:textColor="@color/white" />
+            android:layout_marginBottom="20dp"
+            android:id="@+id/my_progress_bar"
+            android:indeterminateDrawable="@drawable/progress_bar_ring"/>
+
+
 
     </RelativeLayout>
-
 </RelativeLayout>
